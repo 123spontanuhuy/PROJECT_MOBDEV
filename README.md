@@ -7,3 +7,4 @@ UPNEWS (NEWS APP)
 
 ### Download
 Link Google Drive: https://drive.google.com/file/d/1aQFPfNeFMVWsUvIcYHGv_2qXDgXCmEo2/view?usp=sharing
+Link Video Demo/Presentasi: https://drive.google.com/file/d/1SLV3n1m4YWTBK9xO3yOlxKzc4wUp9iRY/view?usp=sharing
