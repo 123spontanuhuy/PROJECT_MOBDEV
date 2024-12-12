@@ -7,4 +7,4 @@ UPNEWS (NEWS APP)
 <p align="center">Ini merupakan Aplikasi berita yang memakai API dari NewsAPI dengan memiliki fitur favourites dan search pada aplikasi</p>
 
 ### Download
-Link Google Drive: https://drive.google.com/file/d/1Z05MzxMdskZIJhHcD0yrvFE-F5wrT8ze/view?usp=drive_link
+Link Google Drive: https://drive.google.com/file/d/1aQFPfNeFMVWsUvIcYHGv_2qXDgXCmEo2/view?usp=sharing
