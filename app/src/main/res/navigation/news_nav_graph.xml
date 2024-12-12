@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/headlinesFragment">
+
+    <!-- Article Fragment -->
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.upnews.ui.fragments.ArticleFragment"
+        android:label="ArticleFragment">
+        <argument
+            android:name="article"
+            app:argType="com.example.upnews.models.Article" />
+    </fragment>
+
+    <!-- Favourites Fragment -->
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.example.upnews.ui.fragments.FavouritesFragment"
+        android:label="FavouritesFragment">
+        <action
+            android:id="@+id/action_favouritesFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+
+        <action
+            android:id="@+id/action_favouritesFragment_to_headlinesFragment"
+            app:destination="@id/headlinesFragment"
+            app:popUpTo="@id/headlinesFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_favouritesFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:popUpTo="@id/favouritesFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Headlines Fragment -->
+    <fragment
+        android:id="@+id/headlinesFragment"
+        android:name="com.example.upnews.ui.fragments.HeadlinesFragment"
+        android:label="HeadlinesFragment">
+        <action
+            android:id="@+id/action_headlinesFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+
+        <action
+            android:id="@+id/action_headlinesFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:popUpTo="@id/headlinesFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_headlinesFragment_to_favouritesFragment"
+            app:destination="@id/favouritesFragment"
+            app:popUpTo="@id/headlinesFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Search Fragment -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.upnews.ui.fragments.SearchFragment"
+        android:label="SearchFragment">
+        <action
+            android:id="@+id/action_searchFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+
+        <action
+            android:id="@+id/action_searchFragment_to_headlinesFragment"
+            app:destination="@id/headlinesFragment"
+            app:popUpTo="@id/searchFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_searchFragment_to_favouritesFragment"
+            app:destination="@id/favouritesFragment"
+            app:popUpTo="@id/searchFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.upnews.ui.fragments.ArticleFragment"
+        android:label="ArticleFragment">
+        <argument
+            android:name="article"
+            app:argType="com.example.upnews.models.Article" />
+        <action
+            android:id="@+id/action_articleFragment_to_headlinesFragment"
+            app:destination="@id/headlinesFragment"
+            app:popUpTo="@id/articleFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
