@@ -1,6 +1,5 @@
 # PROJECT_MOBDEV
 UPNEWS (NEWS APP)
-<h1 align="center"> UPNEWS </h1>
 <h4 align="center"> By: Hebron Prasetya </h4>
 <p align="center"><img src="https://github.com/123spontanuhuy/PROJECT_MOBDEV/blob/main/.idea/DEMOUPNEWS.gif" height="540"/></p>
 
